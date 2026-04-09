@@ -141,6 +141,9 @@ h2::after {
   background: rgba(0, 229, 255, 0.2);
   margin-left: 20px;
 }
+ .about-content p {
+  text-align: justify;
+}
 
 .skills-wrapper {
   display: flex;
@@ -241,6 +244,10 @@ h2::after {
   transition: var(--transition);
 }
 
+.project-card li {
+  text-align: justify;
+}
+
 .project-card:hover {
   transform: translateY(-5px);
   border-color: var(--accent-color);
@@ -266,6 +273,10 @@ h2::after {
   font-size: 0.8rem;
   font-family: monospace;
   margin: 10px 0;
+}
+
+.experience-item li {
+  text-align: justify;
 }
 
 .contact-grid {
@@ -349,6 +360,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .container { 
+    padding: 10px 0; 
+  }
   .header-container { flex-direction: column; text-align: center; gap: 30px; }
   .header-links { justify-content: center; flex-wrap: wrap; }
   nav a { padding: 15px 10px; font-size: 0.75rem; }
@@ -376,9 +390,35 @@ footer {
   .skill-item figcaption {
     font-size: 0.7rem;
   }
+
+  .experience-item ul {
+    padding-left: 20px;
+  }
+
+  .project-card ul {
+    padding-left: 20px;
+  }
+
+  .contact-item span {
+    text-align: flex-start;
+    font-size: 13px;
+  }
+
+  footer {
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 480px) {
+  .header-container h1 { font-size: 1.25rem; }
+  header {
+    padding: 40px 15px;
+  }
+  nav a { padding: 15px 10px; font-size: 0.7rem; }
+  .header-links { 
+    padding: 10px 0;
+    gap: 10px; 
+  }
   h2 { font-size: 1.1rem; }
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
